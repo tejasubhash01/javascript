@@ -4,6 +4,6 @@ function greet(callback) {
 
 function sayBye() {
   console.log("Bye!");
-}
+} {}
 
 greet(sayBye);
