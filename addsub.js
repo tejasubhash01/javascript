@@ -18,10 +18,10 @@ const r1=readline.createInterface({
 });
 r1.question("enter your operation:",(name)=>{
     r1.close();
-});
-if(name== "+"){
+    if(name== "+"){
         console.log(p.addtion());
     }
     else{
         console.log(p.subraction());
     }
+});

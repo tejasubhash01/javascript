@@ -30,7 +30,10 @@ hello();
 //console.log(c);
 //cont keyword
 */
-const a=3;
-a=4;//reassignment and reclaration not possible and block scope
-
-
+//reassignment and reclaration not possible and block scope
+for(let i=1;i<=100;i++){
+    num=i;
+    if(num%2==0){
+        console.log(num);
+    }
+}

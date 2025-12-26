@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p class="text">First</p>
+<p class="text">Second</p>
+<p class="text">Hello</p>
+<p class="text">World</p>
+<script>
+let firstText = document.querySelector(".text"); // first element with class text
+console.log(firstText.innerText); // Output: Hello
+
+let allText = document.querySelectorAll(".text"); // all elements with class text
+allText.forEach(el => el.style.color = "green");
+</script>
+
+
+    
+</body>
+</html>

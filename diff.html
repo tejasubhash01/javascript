@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SessionStorage Example</title>
+</head>
+<body>
+  <h2>SessionStorage Demo</h2>
+
+  <label for="username">Enter Username:</label>
+  <input type="text" id="username" placeholder="Enter name">
+  <button onclick="saveData()">Save</button>
+  <button onclick="showData()">Show</button>
+  <button onclick="clearData()">Clear</button>
+
+  <p id="output"></p>
+
+  <script>
+    // Save data to SessionStorage
+    function saveData() {
+      let name = document.getElementById("username").value;
+      sessionStorage.setItem("username", name);
+      alert("Data saved to SessionStorage!");
+    }
+
+    // Retrieve data from SessionStorage
+    function showData() {
+      let storedName = sessionStorage.getItem("username");
+      if(storedName) {
+        document.getElementById("output").innerText = "Stored Name: " + storedName;
+      } else {
+        document.getElementById("output").innerText = "No data found!";
+      }
+    }
+
+    // Clear SessionStorage
+    function clearData() {
+      sessionStorage.removeItem("username");
+      document.getElementById("output").innerText = "";
+      alert("Data cleared!");
+    }
+  </script>
+</body>
+</html>
